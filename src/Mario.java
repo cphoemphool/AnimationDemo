@@ -11,14 +11,14 @@ public class Mario extends MovingImage {
 	public static final int MARIO_HEIGHT = 60;
 	
 	
-	private double xV, yY;
+	private double xV, yV;
 	
 	
 	public Mario(int x, int y) {
 		super("mario.png", x, y, MARIO_WIDTH, MARIO_HEIGHT);
 		
 		xV = 0;
-		yY = 0;
+		yV = 0;
 	}
 
 	// METHODS
@@ -35,9 +35,11 @@ public class Mario extends MovingImage {
 	public void act(ArrayList<Shape> obstacles) {
 		// FINISH ME!
 		
-		yY += 0.75;
+		yV += 0.75;
 		
-		super.y += 0.5 * yY;
+		super.y += 0.5 * yV;
+		
+		System.out.println("TEST");
 	}
 
 
