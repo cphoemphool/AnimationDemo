@@ -23,7 +23,7 @@ public class Mario extends MovingImage {
 
 	// METHODS
 	public void walk(int dir) {
-		// WALK!
+		super.x += 50 * dir;
 	}
 
 	public void jump() {
